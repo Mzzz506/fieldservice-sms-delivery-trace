@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fieldservice-sms-delivery-trace"
+version = "0.1.0"
+description = "Trace field-service SMS delivery and technician follow-up."
+requires-python = ">=3.10"
+dependencies = ["fastapi>=0.110", "uvicorn>=0.27"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
